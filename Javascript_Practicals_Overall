@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Javascript</title>
+</head>
+
+<body>
+
+<script>
+
+function display(){
+
+	document.write("This is a function");
+}
+
+function other(){
+
+var fname ="Yasas";
+var lname ="Jayasundara";
+
+	document.write("Ravi");
+	document.write('</br>');
+	
+	document.write(fname);
+	document.write('</br>');
+	
+	document.write(fname +" "+ lname);
+	document.write('</br>');
+	
+	document.write(fname.length);
+	document.write('</br>');
+	
+	var x = "This is my new web page";
+	var y = x.indexOf("new")
+	document.write(y);
+	document.write('</br>');
+	
+	display();
+	document.write('</br>');
+}
+	
+function alertBox(){
+
+	alert("This is a alert box");
+}
+	
+function cal(){
+
+	var num1 = prompt("Enter number one:","");
+	if(num1!=null && num1!=""){
+		document.write(num1);
+	}
+	
+	var num2 = prompt("Enter number two:","");
+	if(num2!=null && num2!=""){
+		document.write(num2);
+	}
+	
+	var answer = parseInt(num1) + parseInt(num2);
+	
+	alert("Answer " + answer);	
+}
+	
+	
+function zooming(){
+
+var = i;
+
+	for(i=0; i<5; i++){
+		document.write("HTML font size " + i);
+	}
+
+}
+
+
+	
+	
+</script>
+
+<input type="button" onclick="other()" value="Texts" />
+<input type="button" onclick="alertBox()" value="Ok" />
+<input type="button" onclick="cal()" value="Open calculator" />
+<input type="button" onclick="zooming()" value="Zoom" />
+
+</body>
+</html>
