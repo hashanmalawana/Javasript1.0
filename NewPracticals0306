@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script>
+
+
+var currentdate = new Date();
+var datenow = "Date " + currentdate.getDay() + "/"+currentdate.getMonth() + "/" + currentdate.getFullYear();
+
+var timenow = "Time " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
+document.write(datenow);
+document.write('</br>');
+document.write(timenow);
+document.write('</br>');
+
+
+if(currentdate.getHours()<12){
+	document.write("Good morning");
+}
+else if(12< currentdate.getHours()<15){
+	document.write("Good afternoon");
+}
+else if(15< currentdate.getHours()<19){
+	document.write("Good evening");
+}
+else if(20< currentdate.getHours()<24){
+	document.write("Good night");
+}
+else{
+	document.write("Good day");
+}
+
+</script>
+
+</body>
+</html>
