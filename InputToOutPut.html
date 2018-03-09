@@ -1,0 +1,36 @@
+ <!doctype html>
+    <html>
+      <head>
+        <title>Angular JS Controllers..!! </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      
+      </head>
+      <h2>Here You Have To Enter Your Details</h2>
+
+      <body>
+
+        <div ng-app = "mainApp" ng-controller = "studentcontroller">
+
+          Enter First Name : <input type ="text" ng-model ="student.firstName"> <br> <br>
+          Enter Last Name : <input type ="text" ng-model ="student.lastName"> <br> <br>
+
+          You Entered : {{student.fullName()}}
+        </div>
+
+<script>
+var mainApp = angular.module("mainApp", []);
+mainApp.controller ('studentcontroller', 
+  function($scope){
+$scope.student ={firstName: "Hashan" , lastName:"Malawana",
+fullName : function(){
+  var studentobject;
+  studentobject = $scope.student;
+  return studentobject.firstName + " " + studentobject.lastName;
+}
+};
+
+});
+</script>
+      </body>
+    </html>
+
