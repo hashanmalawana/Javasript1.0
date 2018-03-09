@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Case change by Angular</title>
+</head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<script type="text/javascript">
+var para = prompt();
+</script>
+
+
+<div ng-app>
+
+{{'hashanu' | uppercase}}
+
+</div>
+
+<input ng-model = "name">
+<p>Hello {{name | uppercase}</p>
+
+<script type="text/javascript">
+document.write(para);
+</script>
+</body>
+</html>
