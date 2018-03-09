@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Find the luck number</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var num = prompt("Type the number under 25")
+
+if(num==17){
+	document.write("You selected the number");
+}
+else if(num==12){
+	document.write("You selected the number");
+}
+else if(num==15){
+	document.write("You selected the number");
+}
+else {
+	document.write("You just wrong");
+}
+
+</script>
+
+</body>
+</html>
