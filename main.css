@@ -1,0 +1,16 @@
+h1{
+	letter-spacing: -5px;
+	font-size: 48px;
+}
+.main {
+	margin: 10px auto;
+	width:996px;
+
+}
+
+.main img{
+	width: 330px;
+	height: 220px;
+	float: left;
+	margin: 1px;
+}
